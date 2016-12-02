@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/**CSS Reset**/
+body, div, span, h1, h2, h3, h4, h5, h6, header, footer, section, article, aside, details, figcaption, figure, hgroup, nav, menu, address, time, canvas, audio, video, p, pre, sup, sub, ul, ol, li, dl, dt, dd, form, input, button, textarea, select, iframe, img, a { padding: 0; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+header, footer, section, article, aside, details, figcaption, figure, hgroup, nav, menu { display: block; }
+html, body { -webkit-overflow-scrolling: touch; }
+body { background-color: #eee; color: #FFFFFF; font-family: "Helvetica Neue", "Microsoft Yahei", Tahoma, Arial, Roboto, "Droid Sans", "Droid Sans Fallback", "Heiti SC", sans-self; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+ul, ol { list-style-type: none; }
+a { color: #333; text-decoration: none; }
+a, input, button, select, textarea {  outline: none;  }
+a:link, a:visited, a:hover, a:active { outline: none; }
+input, textarea, keygen, select, button, meter, progress {  text-rendering: auto;  color: initial;  letter-spacing: normal;  word-spacing: normal;  text-transform: none;  text-indent: 0px;  text-shadow: none;  display: inline-block;  text-align: start;  -webkit-rtl-ordering: logical;  -webkit-user-select: text;  cursor: auto;  -webkit-writing-mode: horizontal-tb;  }
+input[type="text"]:disabled { border-style:none; background:transparent; padding-left: inherit; }
+input[type="password"]:disabled { border-style:none; background:transparent; padding-left: inherit; }
+/*
+ 公共
+*/
+.kh-head { width: 100%;  height: 1.8rem;  line-height: 1.8rem; color: #FFFFFF; text-align: center; font-size: 0.8rem; }
+.kh-index-footer { width: 100%; height: 2rem; position: fixed; bottom: 0; line-height: 2rem; display: block; zoom: 1; border-top: 1px solid #C8C8C8;}
+.clear { clear: both; }
+.inline-block { display: inline-block; }
+.inline-flex { display: inline-flex; }
+.inline { display: inline; }
+.pr { position: relative; }
+.fs453333 { font-size: .453333rem; }
+.fs06 { font-size: 0.6rem; }
+.fs1 { font-size: 1rem; }
+.left { float: left; }
+.right { float:  right; }
+.pl-20 {  padding-left: .20rem; }
+.width { width: 100%; }
+.wd68 { width: 6.8rem; }
+.wd4{ width: 4rem; }
+.pr1rem { padding-right: 1rem; }
+.cr666666 { color: #0d9579; }
+.bC1eb78b {background-color: #1eb78b; }
+.bC21cd9d {background-color: #21cd9d; }
+.bC2ce0bb { background-color: #2ce0bb; }
+/*
+ 去除input默认背景颜色和边框
+*/
+.input-bc-bk {
+ border-style: none;
+ background: transparent;
+ width: 5rem;
+ margin-left: 3.6rem;
+}
+
+/*选择地区*/
+.express-area { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin-top: .25rem; margin-bottom: .25rem; background-color: #fff; }
+.express-area a { display: block; padding: .5rem; background: url(../images/link-arrow.png) no-repeat 98% 50%; background-size: .55rem .55rem; }
+.express-area dl { position: relative; line-height: 1.2rem; color: #4d525d; }
+.express-area dl dt { position: absolute; top: 0; left: 0; font-size: .7rem; line-height: 1.2rem; }
+.express-area dl dd { padding-top: .1rem; padding-right: .8rem; margin-left: 3.5rem; text-align: justify; font-size: .65rem; line-height: 1rem; }
+@media (min-width: 721px) and (max-width: 1300px) {
+ .express-area a { padding: .3rem; }
+ .express-area dl dt { font-size: .5rem; line-height: 1rem; }
+ .express-area dl dd { padding-right: .6rem; margin-left: 3rem; font-size: .4rem; line-height: .8rem; }
+}
+/*选择地区弹层*/
+.express-area-box { max-height: 12rem; bottom: -100%; z-index: 15; background-color: #fff; color: #4d525d; position: fixed; left: 0; width: 100%; margin-left: 0; overflow: scroll; }
+.express-area-box header { position: relative; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; }
+.express-area-box header h3 { margin: 0 1.675rem; text-align: center; font-size: .8rem; line-height: 2.25rem; }
+.express-area-box header .back,
+.express-area-box header .close { position: absolute; top: 0; width: 1.675rem; height: 2.25rem; }
+.express-area-box header .back { display: none; left: 0; background: url(../images/back.png) no-repeat center;   background-size: .45rem .75rem; }
+.express-area-box header .close { right: 0; background: url(../images/close-area.png) no-repeat center; background-size: .675rem .675rem; }
+.express-area-box article { overflow-y: scroll; }
+.area-list li { padding: .5rem; border-bottom: 1px solid #e2e2e2; text-align: justify; font-size: .7rem; line-height: 1.25rem; }
+/*遮罩层*/
+.mask { display: none; position: absolute; top: 0; left: 0; z-index: 12; width: 100%; height: 100%; background-color: rgba(0,0,0,.5); }
+
+/*
+ index.html
+*/
+.kh-index-main { width: 100%;  min-height: 8rem; font-size: .453333rem; }
+.kh-head-bg { background-color: #454b63; }
+.kh-index-pd235 { padding: 1rem 0 0 2.6555rem; height: 3.5rem; }
+.kh-index-LoanTerm { border-right: 1px solid #ffffff; display: inline-block; height: 2rem; width: 1rem; vertical-align: -0.2rem; margin-left: 0.122rem; }
+.kh-index-AmountBottom { border-bottom: 1px solid #ffffff; width: 13rem; margin: 0 auto; }
+.kh-index-wd8 { width: 8rem; }
+.kh-index-Ac { padding: 0 0 0 1rem; line-height: 2.5rem; height: 2.5rem; font-size: 0.6rem; cursor: pointer; }
+.kh-index-Triangle::after { content: ""; display: inline-block; width: 0; height: 0; line-height: 0; border: 0.3rem solid transparent; border-bottom-width: 0; border-top: 0.5rem solid #ffffff; vertical-align: middle; margin-left: 0.2rem; transform: rotate(0deg); transition: all .3s ease-in; }
+.kh-index-PeopleNumber::after { content: ""; display: inline-block; width: 0; height: 0; line-height: 0; border: 0.3rem solid transparent; border-bottom-width: 0; border-top: 0.5rem solid #ffffff; vertical-align: middle; margin-left: 0.2rem; transform: rotate(0deg); transition: all .3s ease-in; }
+.kh-index-StagePeriod::after { content: ""; display: inline-block; width: 0; height: 0; line-height: 0; border: 0.3rem solid transparent; border-bottom-width: 0; border-top: 0.5rem solid #ffffff; vertical-align: middle; margin-left: 0.2rem; transform: rotate(0deg); transition: all .3s ease-in; }
+.kh-index-Date::after { content: ""; display: inline-block; width: 0; height: 0; line-height: 0; border: 0.3rem solid transparent; border-bottom-width: 0; border-top: 0.5rem solid #ffffff; vertical-align: middle; margin-left: 0.2rem; transform: rotate(0deg); transition: all .3s ease-in; }
+.kh-Destination .Kh-open::after { transform: rotate(180deg); transition: all .3s ease-in; }
+.kh-PeopleNumber .Kh-open::after { transform: rotate(180deg); transition: all .3s ease-in; }
+.kh-StagePeriod .Kh-open::after { transform: rotate(180deg); transition: all .3s ease-in; }
+.kh-Date .Kh-open::after { transform: rotate(180deg); transition: all .3s ease-in; }
+.kh-index-amount { margin-left: 0.3rem; position: relative; }
+.kh-index-b { font-size: 1.2rem; vertical-align: -0.1rem; }
+.kh-index-s { vertical-align: -0.1rem; }
+.kh-index-pd3 { padding: 1rem 0 0 3rem; }
+.kh-index-mp5 { margin-left: -1rem; position: relative; }
+.kh-index-va-10 { vertical-align: -10px; }
+.kh-index-ml2 { margin-left: 1rem; }
+.kh-index-bt1s { border-bottom: 1px dashed #FFFFFF; }
+.kh-index-error { color: red; font-size: 0.5rem; text-align: center; height: 1rem; }
+.kh-index-ph3357 { padding: 3rem 0 0 3.5rem; height: 7rem; }
+.kh-index-db1c8 { display: inherit; border-bottom: 1px dashed #C8C8C8; }
+.kh-index-input-text { -webkit-appearance: none;width: 4.5rem; padding-left: 0.5rem;border: 0;background-color: transparent;display: inline; }
+.kh-index-pd384 { padding: 0 0 0 3.8rem; height: 4rem; }
+.kh-index-pd384 { padding: 0 4rem 0 3.8rem; }
+.kh-index-button { height: 1.5rem; line-height: 1.5rem; border: 1px solid #bbbbbb; color: #fff; background-color: #bbbbbb; text-align: center; font-size: 0.755rem; display: block; cursor: pointer; width: 10rem; margin: 1.2rem auto; border-radius: 0.1rem; font-family: "Helvetica Neue", "Microsoft Yahei", Tahoma, Arial, Roboto, "Droid Sans", "Droid Sans Fallback", "Heiti SC", sans-self; }
+.kh-index-footer-a1-a2 { color: #b2b2b2; background-color: #f7f7f7; width: 50%; display: block; float: left!important; text-align: center!important; cursor: pointer; }
+

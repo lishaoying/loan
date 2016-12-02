@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <script type="text/javascript" src="../src/js/jQuery1.10.2.js"></script>
+    <link type="text/css" rel="stylesheet" href="../src/css/index2.css">
+    <title>绑卡效验</title>
+</head>
+<body>
+    <div class="kh-head-bg">
+        <header class="kh-head">绑卡效验</header>
+    </div>
+    <form method="post" id="ImmediateApplication">
+        <ul>
+            <li class="kh-index-Ac bC1eb78b kh-Destination" id="kh-Destination">
+                <label class="fs06">姓名</label>
+                <label class="fs06 cr666666 right pr1rem"><label>境内</label><span class="kh-index-Triangle"></span></label>
+            </li>
+            <li class="kh-index-Ac bC21cd9d kh-index-bt1s kh-Date" id="kh-Date">
+                <label class="fs06">身份证号</label>
+                <label class="fs06 cr666666 right pr1rem"><label>2016-05-23</label><span class="kh-index-Date"></span></label>
+            </li>
+            <li class="kh-index-Ac bC21cd9d kh-PeopleNumber" id="kh-PeopleNumber">
+                <label class="fs06">手机号</label>
+                <label class="fs06 cr666666 right pr1rem"><label>3</label><span class="kh-index-PeopleNumber"></span></label>
+            </li>
+            <li class="kh-index-Ac bC2ce0bb kh-index-bt1s">
+                <label class="fs06">输入验证码</label>
+                <label><input maxlength="5" placeholder="600.00-50000.00" class="input-bc-bk cr666666 fs06" type="text" data-check="integer||AmountRange"><span>(元)</span></label>
+            </li>
+            <li class="kh-index-Ac bC2ce0bb kh-StagePeriod" id="kh-StagePeriod">
+                <label class="fs06">所属银行</label>
+                <label class="fs06 cr666666 right pr1rem"><label>6个月</label><span class="kh-index-StagePeriod"></span></label>
+            </li>
+            <li class="kh-index-Ac bC2ce0bb kh-StagePeriod" id="kh-StagePeriod">
+                <label class="fs06">银行卡号</label>
+                <label class="fs06 cr666666 right pr1rem"><label>6个月</label><span class="kh-index-StagePeriod"></span></label>
+            </li>
+            <li class="kh-index-error"></li>
+            <li>
+                <input type="submit" value="立即申请" class="kh-index-button" id="kh-index-button" disabled="disabled">
+            </li>
+        </ul>
+    </form>
+    <script type="text/javascript" src="../src/js/js.js"></script>
+</body>
+</html>
